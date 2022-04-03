@@ -12,7 +12,6 @@ export default function Main() {
   const [searchData, setSearchData] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
-
   const PER_PAGE = 12;
 
   useEffect(() => {
@@ -77,7 +76,6 @@ export default function Main() {
   };
 
   const onSelect = (product) => {
-    console.log("1asa", product);
     setIsModalVisible(true);
     setSelectedProduct(product);
   };

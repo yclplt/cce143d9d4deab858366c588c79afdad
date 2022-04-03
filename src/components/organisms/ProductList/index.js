@@ -30,24 +30,11 @@ const ProductList = ({
           type="search"
           onSearch={(e) => onSearch(e)}
         />
-        {/* {data?.length > 0 && (
-          <Select
-            size="md"
-            optionValKey="value"
-            optionLabelKey="name"
-            onChange={onChangeFilter}
-            placeholder="Order By"
-            options={[
-              { name: "Name (A - Z)", value: 2 },
-              { name: "Name (Z - A)", value: 1 },
-            ]}
-          />
-        )} */}
       </div>
       <Row justify="center" gutter={[16, 16]}>
         {data?.length > 0 ? (
           data?.map((product) => (
-            <Col xs={24} md={12} lg={6} sx={{ marginBotton: "5px" }}>
+            <Col xs={24} md={12} lg={6}>
               <ProductItem
                 keyValue={`${product?.id}${product?.title}`}
                 point={product?.point}
