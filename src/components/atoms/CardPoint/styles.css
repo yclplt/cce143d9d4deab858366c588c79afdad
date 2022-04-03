@@ -1,0 +1,18 @@
+.hepsi-point-box {
+  width: 50px;
+  height: 82px;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0px 40px;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+}
+
+.hepsi-point-box > span {
+  font-weight: 800;
+  font-size: 23px;
+}

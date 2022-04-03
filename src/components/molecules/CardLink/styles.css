@@ -1,0 +1,52 @@
+.card-link {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 90px;
+  padding: 7px 0px;
+  height: max-content;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card-info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-vote {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-info > .card-vote > button {
+  padding-left: 0px;
+  height: 26px;
+}
+
+.card-link:hover {
+  background-color: #f6f8f8;
+  border: 1px solid #e2e8ea;
+  padding-left: 7px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.card-delete {
+  display: flex;
+  width: 0px;
+  height: 90px;
+  background-color: #e74c3c;
+  justify-content: center;
+  align-items: center;
+  min-height: 90px;
+  transition: width 0.2s;
+  cursor: pointer;
+}
+
+.card-link:hover > .card-delete {
+  display: flex;
+  width: 50px;
+}

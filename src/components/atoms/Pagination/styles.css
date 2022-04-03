@@ -1,0 +1,27 @@
+.hepsi-pagination {
+  margin: 15px 0px;
+  color: #000000;
+}
+
+.hepsi-pagination > .ant-pagination-item-active {
+  border-color: #ff6000;
+}
+
+.ant-pagination-item-active a {
+  color: #000000;
+}
+
+.hepsi-pagination > .ant-pagination-item:hover {
+  border-color: #ff6000;
+  color: #000000;
+}
+
+.hepsi-pagination > .ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+  border-color: #ff6000;
+  color: #000000;
+}
+
+.hepsi-pagination > .ant-pagination-item:hover a {
+  color: #000000;
+}

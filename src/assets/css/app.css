@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.add-link > .ant-col > .hepsi-button {
+  padding: 0;
+}

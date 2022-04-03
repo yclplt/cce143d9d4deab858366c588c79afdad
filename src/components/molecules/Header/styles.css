@@ -1,0 +1,11 @@
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.top-header > .hepsi-text {
+  font-size: 18px;
+  font-weight: 700;
+}

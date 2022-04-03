@@ -1,0 +1,32 @@
+.hepsi-button {
+  background: #ff6000;
+  border-color: #ff6000;
+}
+
+.hepsi-button:focus {
+  background: #ff6000;
+  border-color: #ff6000;
+}
+
+.hepsi-button:hover {
+  background: #ff8a44;
+  border-color: #ff8a44;
+}
+
+.hepsi-button.ant-btn-link {
+  border-color: transparent;
+  background: transparent;
+  color: #333;
+}
+
+.hepsi-button.ant-btn-link:hover {
+  color: #000000;
+}
+
+.hepsi-button.right {
+  float: right;
+}
+
+.hepsi-button.left {
+  float: left;
+}

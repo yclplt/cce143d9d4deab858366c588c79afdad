@@ -1,0 +1,22 @@
+.hepsi-select
+  > .ant-select:not(.ant-select-disabled):hover
+  .ant-select-selector {
+  border-color: #ff6000 !important;
+}
+
+.hepsi-select {
+  margin: 5px 0px;
+}
+
+.hepsi-select.md {
+  width: 170px;
+}
+
+.ant-input-group-addon > .ant-row {
+  margin-bottom: 0px;
+  border: 0px;
+}
+
+.ant-input-group-addon {
+  border: 0px;
+}
