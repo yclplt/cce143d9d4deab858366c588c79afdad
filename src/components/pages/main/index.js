@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Header, ProductList } from "../../index";
-import { Row, Col } from "antd";
+import { Header, ProductList, ProductDetail } from "../../index";
+import { Row, Col, Modal } from "antd";
 import { callAPI, callApiGet } from "../../../utils/axios.js";
 
 export default function Main() {
@@ -10,6 +10,9 @@ export default function Main() {
   const [totalCount, setTotalCount] = useState(0);
   const [statusSearch, setStatusSearch] = useState(false);
   const [searchData, setSearchData] = useState([]);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
   const PER_PAGE = 12;
 
   useEffect(() => {
@@ -59,7 +62,7 @@ export default function Main() {
       setStatusSearch(true);
       const filterData = [...productsList];
       const filterProducts = filterData.filter((filter) =>
-        filter.title.includes(text)
+        filter.title.toLocaleLowerCase().includes(text.toLocaleLowerCase())
       );
       setSearchData(filterProducts);
       setProductsListFilter(filterProducts.slice(0, PER_PAGE));
@@ -71,6 +74,12 @@ export default function Main() {
       setTotalCount(productsList?.length);
       setCurrentPage(1);
     }
+  };
+
+  const onSelect = (product) => {
+    console.log("1asa", product);
+    setIsModalVisible(true);
+    setSelectedProduct(product);
   };
 
   return (
@@ -86,11 +95,21 @@ export default function Main() {
                 onSearch={onSearch}
                 totalCount={totalCount}
                 page={currentPage}
+                onSelect={onSelect}
               />
             </Col>
           </Row>
         </Col>
       </Row>
+      <Modal
+        visible={isModalVisible}
+        title={selectedProduct?.title}
+        centered
+        footer={null}
+        onCancel={() => setIsModalVisible(false)}
+      >
+        <ProductDetail data={selectedProduct} />
+      </Modal>
     </>
   );
 }

@@ -15,6 +15,7 @@ const ProductList = ({
   data = [],
   onChangeFilter,
   onSearch,
+  onSelect,
   totalCount = 0,
   page = 1,
 }) => {
@@ -53,6 +54,8 @@ const ProductList = ({
                 head={product?.title}
                 head2={`${product?.variants?.[0]?.price}`}
                 image={product?.images?.[0]?.src}
+                onClick={onSelect}
+                product={product}
               />
             </Col>
           ))
