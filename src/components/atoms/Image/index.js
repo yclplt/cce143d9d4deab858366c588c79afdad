@@ -7,7 +7,7 @@ import ImageProps from "./props";
 
 const Image = ({ size, position, onChange, ...props }) => {
   const pgnClassName = classNames({
-    "hepsi-image": true,
+    "ycl-image": true,
     [position]: position,
   });
 

@@ -19,7 +19,7 @@ const Select = ({
   ...props
 }) => {
   const className = classNames({
-    "hepsi-select": true,
+    "ycl-select": true,
     [position]: position,
     [size]: size,
   });

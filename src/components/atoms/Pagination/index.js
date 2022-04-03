@@ -15,7 +15,7 @@ const Pagination = ({
   ...props
 }) => {
   const pgnClassName = classNames({
-    "hepsi-pagination": true,
+    "ycl-pagination": true,
     [color]: color,
     [position]: position,
   });

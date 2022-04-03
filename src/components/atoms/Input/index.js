@@ -4,11 +4,12 @@ import { Input as AntdInput } from "antd";
 import PropTypes from "prop-types";
 import InputProps from "./props";
 
+const { TextArea, Search, Password } = AntdInput;
 const classNames = require("classnames");
 
-const Input = ({ type, position, size, placeholder, ...props }) => {
+const Input = ({ type, position, size, ...props }) => {
   const className = classNames({
-    "hepsi-input": true,
+    "ycl-input": true,
     [position]: position,
     [size]: size,
   });
@@ -18,6 +19,9 @@ const Input = ({ type, position, size, placeholder, ...props }) => {
     <div className={className}>
       {type === InputProps.type.text && (
         <AntdInput {...allProps} autoComplete="off" />
+      )}
+      {type === InputProps.type.search && (
+        <Search {...allProps} autoComplete="off" />
       )}
     </div>
   );

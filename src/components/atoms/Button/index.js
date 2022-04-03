@@ -15,7 +15,7 @@ const Button = ({
   ...props
 }) => {
   const btnClassName = classNames({
-    "hepsi-button": true,
+    "ycl-button": true,
     [color]: color,
     [position]: position,
   });

@@ -1,9 +1,9 @@
-.hepsi-pagination {
+.ycl-pagination {
   margin: 15px 0px;
   color: #000000;
 }
 
-.hepsi-pagination > .ant-pagination-item-active {
+.ycl-pagination > .ant-pagination-item-active {
   border-color: #ff6000;
 }
 
@@ -11,17 +11,17 @@
   color: #000000;
 }
 
-.hepsi-pagination > .ant-pagination-item:hover {
+.ycl-pagination > .ant-pagination-item:hover {
   border-color: #ff6000;
   color: #000000;
 }
 
-.hepsi-pagination > .ant-pagination-prev:hover .ant-pagination-item-link,
+.ycl-pagination > .ant-pagination-prev:hover .ant-pagination-item-link,
 .ant-pagination-next:hover .ant-pagination-item-link {
   border-color: #ff6000;
   color: #000000;
 }
 
-.hepsi-pagination > .ant-pagination-item:hover a {
+.ycl-pagination > .ant-pagination-item:hover a {
   color: #000000;
 }

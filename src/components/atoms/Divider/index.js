@@ -7,7 +7,7 @@ import DividerProps from "./props";
 
 const Divider = ({ size, position, label, ...props }) => {
   const pgnClassName = classNames({
-    "hepsi-divider": true,
+    "ycl-divider": true,
     [position]: position,
   });
 

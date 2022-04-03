@@ -21,7 +21,7 @@ const Label = ({
   type,
 }) => {
   const compClassName = classNames({
-    "hepsi-text": true,
+    "ycl-text": true,
     [position]: position,
     [color]: color,
     [size]: size,

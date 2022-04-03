@@ -2,7 +2,7 @@ import "./styles.css";
 
 const CardPoint = ({ point }) => {
   return (
-    <div className="hepsi-point-box">
+    <div className="ycl-point-box">
       <span>{point}</span> POINTS
     </div>
   );

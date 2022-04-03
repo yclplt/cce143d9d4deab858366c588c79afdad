@@ -1,0 +1,31 @@
+.product-link {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 90px;
+  padding: 7px 0px;
+  height: max-content;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.product-link > .ant-image {
+  width: 150px;
+}
+
+.product-info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-link:hover {
+  background-color: #f6f8f8;
+  border: 1px solid #e2e8ea;
+  padding-left: 7px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}

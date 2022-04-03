@@ -1,15 +1,13 @@
-.hepsi-select
-  > .ant-select:not(.ant-select-disabled):hover
-  .ant-select-selector {
+.ycl-select > .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
   border-color: #ff6000 !important;
 }
 
-.hepsi-select {
+.ycl-select {
   margin: 5px 0px;
 }
 
-.hepsi-select.md {
-  width: 170px;
+.ycl-select.md {
+  width: 30vh;
 }
 
 .ant-input-group-addon > .ant-row {
