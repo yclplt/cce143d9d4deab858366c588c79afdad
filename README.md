@@ -1,5 +1,5 @@
 # polls
-- [Online Preview Netlify](https://ycl-products-list.netlify.app/// "Online Preview Netlify")
+- [Online Preview Netlify](https://ycl-products-list.netlify.app "Online Preview Netlify")
 
 # How the install
 ```
